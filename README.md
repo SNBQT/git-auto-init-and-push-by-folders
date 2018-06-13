@@ -56,5 +56,5 @@ pip install pypinyin
 1. run code
 
 ```
-./
+./init-and-push.sh
 ```
