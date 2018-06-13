@@ -36,22 +36,22 @@ pip install pypinyin
 
 1. acquire accesstoken
 
-    ![](doc/1.png =250x)
+    ![](doc/1.png)
 
-    ![](doc/2.png =250x)
+    ![](doc/2.png)
 
-    ![](doc/3.png =250x)
+    ![](doc/3.png)
     
 1. acquire Group path, id
 
 
-    ![](doc/7.png =250x)
+    ![](doc/7.png)
 
-    ![](doc/4.png =250x)
+    ![](doc/4.png)
 
-    ![](doc/5.png =250x)
+    ![](doc/5.png)
 
-    ![](doc/6.png =250x)
+    ![](doc/6.png)
 
 1. run code
 
