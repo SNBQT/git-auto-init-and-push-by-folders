@@ -53,7 +53,7 @@ pip install pypinyin
 
     ![](doc/6.png)
 
-1. completed edit `.env` file as below
+1. The edit sample of `.env` file as below
 
     ```
     # Init params
@@ -77,3 +77,24 @@ pip install pypinyin
 ```
 ./init-and-push.sh
 ```
+
+
+
+### Issue: GitLab issuing temporary IP bans - 403 forbidden
+
+Example configuration in /etc/gitlab/gitlab.rb:
+```
+gitlab_rails['rack_attack_git_basic_auth'] = {
+  'enabled' => true,
+  'ip_whitelist' => ["192.168.123.123", "192.168.123.124"],
+  'maxretry' => 10,
+  'findtime' => 60,
+  'bantime' => 600
+}
+```
+In this example, we are whitelisting the servers 192.168.123.123 and 192.168.123.124, and adjusting down the ban time from one hour to 10 minutes (600 seconds). maxretry = 10 allows a user to get the password wrong 10 times before ban, and findtime = 60 means that the failed attempts counter resets after 60 seconds.
+
+
+**Ref:**
+
+* https://stackoverflow.com/questions/36298959/gitlab-issuing-temporary-ip-bans-403-forbidden

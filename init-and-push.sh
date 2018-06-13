@@ -64,7 +64,7 @@ do
   -H "Content-type: application/json" \
   -X POST \
   -d $postData \
-  http://$domain/api/v4/projects
+  https://$domain/api/v4/projects
   
   # Git repository init & push
   echo $workPath
