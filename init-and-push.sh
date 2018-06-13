@@ -72,7 +72,7 @@ do
   git pull
   git init
   git remote remove git-auto-init-and-push-by-folders
-  git remote add git-auto-init-and-push-by-folders http://$username:$password@$domain/$grouppath/$projectPath.git
+  git remote add git-auto-init-and-push-by-folders https://$username:$password@$domain/$grouppath/$projectPath.git
   git pull git-auto-init-and-push-by-folders master
   rm git-auto-init-and-push-by-folders.md
   echo -e "git-auto-init-and-push-by-folders code supported by Ansi Zhang, for more please view https://github.com/SNBQT/git-auto-init-and-push-by-folders \n" >> git-auto-init-and-push-by-folders.md

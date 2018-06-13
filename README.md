@@ -53,7 +53,26 @@ pip install pypinyin
 
     ![](doc/6.png)
 
-1. run code
+1. completed edit `.env` file as below
+
+    ```
+    # Init params
+    username=123
+    useremail=12@12.12
+    password=123456
+    accesstoken=123456789
+
+    # Group path, id
+    grouppath=test-group
+    grouppathId=616
+
+    # domain:port or host:port
+    domain=mekhub.cn
+    ```
+
+
+
+3. run code
 
 ```
 ./init-and-push.sh
