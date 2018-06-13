@@ -5,7 +5,7 @@ requre pypinyin to transfer Chinese hanzi to pinyin for projectPath. It will aut
 pip install pypinyin
 ```
 
-##How to config and use?
+## How to config and use?
 
 1. download
     ```
