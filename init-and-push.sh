@@ -72,7 +72,7 @@ do
   echo $workPath
   cd $workPath
   git pull
-  git pull -f origin master
+  git pull --no-ff origin master
   git init
   git remote remove git-auto-init-and-push-by-folders
   git remote add git-auto-init-and-push-by-folders https://$username:$password@$domain/$grouppath/$projectPath.git
