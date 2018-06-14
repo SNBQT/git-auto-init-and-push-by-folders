@@ -71,8 +71,8 @@ do
   # Git repository init & push
   echo $workPath
   cd $workPath
-  git pull
   git pull --no-ff origin master
+  git pull
   git init
   git remote remove git-auto-init-and-push-by-folders
   git remote add git-auto-init-and-push-by-folders https://$username:$password@$domain/$grouppath/$projectPath.git
