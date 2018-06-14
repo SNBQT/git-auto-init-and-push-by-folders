@@ -52,10 +52,12 @@ do
   projectPath=$"`pypinyin -s NORMAL $dirName`"  # support Chinese hanzi to pinyin
   projectPath=${projectPath// /-}  # replace space with -
 
-  data='{"name":"replacement","visibility":"private","namespace_id":namespaceId,"path":"replacepath"}' 
+  data='{"name":"replacement","visibility":"private","namespace_id":namespaceId,"path":"replacepath","visibility":"visibility_level"}' 
   postData=${data//replacement/$projectName} 
   postData=${postData//replacepath/$projectPath} 
   postData=${postData//namespaceId/$grouppathId} 
+  postData=${postData//visibility_level/$visibility_level} 
+  
   echo $postData
   
   # Gitlab Create Projects
