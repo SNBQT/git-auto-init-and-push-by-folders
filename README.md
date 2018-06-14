@@ -30,6 +30,9 @@ pip install pypinyin
     grouppath=test-group
     grouppathId=35
 
+    # visibility level private internal public
+    visibility_level=public
+
     # domain or host
     domain=127.0.0.1:8888
     ```
@@ -65,6 +68,9 @@ pip install pypinyin
     # Group path, id
     grouppath=test-group
     grouppathId=616
+
+    # visibility level private internal public
+    visibility_level=public
 
     # domain:port or host:port
     domain=mekhub.cn
